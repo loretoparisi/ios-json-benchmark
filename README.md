@@ -3,10 +3,12 @@ iOS JSON Parser Benchmark
 
 #### About This Project
 A simple testbed to check several JSON parser performances on iOS.
-
-#### Checkout
 Check out the project page:
 http://loretoparisi.github.io/ios-json-benchmark/
+
+#### Checkout
+
+```git clone https://github.com/loretoparisi/ios-json-benchmark.git```
 
 ### About iOS JSON Benchmark
 A simple testbed to check several JSON parser performances on iOS.
