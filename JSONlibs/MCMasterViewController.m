@@ -54,7 +54,6 @@
     _files = [[NSArray alloc] initWithObjects:
               @"track.chart.get.json",
               @"track.chart.get_nogenre.json",
-              @"macro.subtitles.get.json",
               @"location.get.json", nil];
     
     _selectedLibraries = [[NSMutableArray alloc] init];

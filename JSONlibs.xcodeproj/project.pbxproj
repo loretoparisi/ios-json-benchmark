@@ -53,7 +53,6 @@
 		84079C9D1B346A2D005A2A1A /* gason.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84079C9B1B346A2D005A2A1A /* gason.cpp */; };
 		84079CA31B346A83005A2A1A /* GasonObj.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84079CA21B346A83005A2A1A /* GasonObj.mm */; };
 		84EC8C5C19E7D45400572998 /* track.chart.get.json in Resources */ = {isa = PBXBuildFile; fileRef = 84EC8C5B19E7D45400572998 /* track.chart.get.json */; };
-		84EC8C5E19E7D47300572998 /* macro.subtitles.get.json in Resources */ = {isa = PBXBuildFile; fileRef = 84EC8C5D19E7D47300572998 /* macro.subtitles.get.json */; };
 		84EC8C6019E7D88600572998 /* location.get.json in Resources */ = {isa = PBXBuildFile; fileRef = 84EC8C5F19E7D88600572998 /* location.get.json */; };
 		84EC8C6A19E8189400572998 /* track.chart.get_nogenre.json in Resources */ = {isa = PBXBuildFile; fileRef = 84EC8C6919E8189400572998 /* track.chart.get_nogenre.json */; };
 /* End PBXBuildFile section */
@@ -443,7 +442,6 @@
 				84EC8C6019E7D88600572998 /* location.get.json in Resources */,
 				84EC8C5C19E7D45400572998 /* track.chart.get.json in Resources */,
 				5BA8E510148E54EE00808B76 /* Icon.png in Resources */,
-				84EC8C5E19E7D47300572998 /* macro.subtitles.get.json in Resources */,
 				5BA8E513148E54F100808B76 /* Icon@2x.png in Resources */,
 				5BA8E522148E62DB00808B76 /* MCTestViewController.xib in Resources */,
 				5BA8E38F149167D40063738F /* htdocs in Resources */,
