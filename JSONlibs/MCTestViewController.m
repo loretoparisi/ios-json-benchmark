@@ -13,6 +13,7 @@
 #import "NXJsonParser.h"
 #import "Rapidjson.h"
 #import "GasonObj.h"
+#import "Capnproto.h"
 
 @implementation MCTestViewController
 

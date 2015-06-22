@@ -52,6 +52,7 @@
 		84079C961B344C47005A2A1A /* Rapidjson.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84079C951B344C47005A2A1A /* Rapidjson.mm */; };
 		84079C9D1B346A2D005A2A1A /* gason.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84079C9B1B346A2D005A2A1A /* gason.cpp */; };
 		84079CA31B346A83005A2A1A /* GasonObj.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84079CA21B346A83005A2A1A /* GasonObj.mm */; };
+		845ED4251B3820D900DF07CB /* Capnproto.mm in Sources */ = {isa = PBXBuildFile; fileRef = 845ED4241B3820D900DF07CB /* Capnproto.mm */; };
 		84EC8C5C19E7D45400572998 /* track.chart.get.json in Resources */ = {isa = PBXBuildFile; fileRef = 84EC8C5B19E7D45400572998 /* track.chart.get.json */; };
 		84EC8C6019E7D88600572998 /* location.get.json in Resources */ = {isa = PBXBuildFile; fileRef = 84EC8C5F19E7D88600572998 /* location.get.json */; };
 		84EC8C6A19E8189400572998 /* track.chart.get_nogenre.json in Resources */ = {isa = PBXBuildFile; fileRef = 84EC8C6919E8189400572998 /* track.chart.get_nogenre.json */; };
@@ -145,6 +146,8 @@
 		84079C9C1B346A2D005A2A1A /* gason.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gason.h; sourceTree = "<group>"; };
 		84079CA11B346A83005A2A1A /* GasonObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GasonObj.h; sourceTree = "<group>"; };
 		84079CA21B346A83005A2A1A /* GasonObj.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GasonObj.mm; sourceTree = "<group>"; };
+		845ED4231B3820D900DF07CB /* Capnproto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Capnproto.h; sourceTree = "<group>"; };
+		845ED4241B3820D900DF07CB /* Capnproto.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Capnproto.mm; sourceTree = "<group>"; };
 		84EC8C5B19E7D45400572998 /* track.chart.get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = track.chart.get.json; sourceTree = "<group>"; };
 		84EC8C5D19E7D47300572998 /* macro.subtitles.get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = macro.subtitles.get.json; sourceTree = "<group>"; };
 		84EC8C5F19E7D88600572998 /* location.get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = location.get.json; sourceTree = "<group>"; };
@@ -240,6 +243,7 @@
 				5B528483148E530D00685137 /* TouchJSON  */,
 				5B52849C148E530D00685137 /* NextiveJson */,
 				5B5284AB148E530D00685137 /* SBJson */,
+				845ED4261B3820E300DF07CB /* Capnproto */,
 			);
 			name = Libs;
 			sourceTree = "<group>";
@@ -382,6 +386,15 @@
 			name = Rapidjson;
 			sourceTree = "<group>";
 		};
+		845ED4261B3820E300DF07CB /* Capnproto */ = {
+			isa = PBXGroup;
+			children = (
+				845ED4231B3820D900DF07CB /* Capnproto.h */,
+				845ED4241B3820D900DF07CB /* Capnproto.mm */,
+			);
+			name = Capnproto;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -472,6 +485,7 @@
 				5B5284D0148E530D00685137 /* CJSONScanner.m in Sources */,
 				5B5284D1148E530D00685137 /* CJSONSerializer.m in Sources */,
 				5B5284D2148E530D00685137 /* NSError+Extensions.m in Sources */,
+				845ED4251B3820D900DF07CB /* Capnproto.mm in Sources */,
 				84079CA31B346A83005A2A1A /* GasonObj.mm in Sources */,
 				5B5284D3148E530D00685137 /* NXDebug.m in Sources */,
 				5B5284D4148E530D00685137 /* NXJsonParser.m in Sources */,

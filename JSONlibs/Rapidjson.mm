@@ -13,9 +13,6 @@
 #include "rapidjson/stringbuffer.h"
 #include <iostream>
 
-#include "capnp/message.h"
-#include "capnp/serialize-packed.h"
-
 
 using namespace rapidjson;
 
