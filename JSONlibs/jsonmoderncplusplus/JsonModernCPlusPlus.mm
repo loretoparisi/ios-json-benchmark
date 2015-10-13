@@ -6,24 +6,22 @@
 //  Copyright © 2015 Mocha Code. All rights reserved.
 //
 
-#import "Json11.h"
-#import "json11.hpp"
+#import "JsonModernCPlusPlus.h"
+#import "json.hpp"
 #import "CppStringAdditions.h"
 
-@implementation Json11
+using json = nlohmann::json;
+
+@implementation JsonModernCPlusPlus
 
 - (NSString*)parse:(NSString*)json {
     
     const char* data = [json UTF8String];
     
-    json11::Json parser;
-    
-    parser = json11::Json(data);
-    
-    std::string jsonString;
-    
-    parser.dump(jsonString);
+    auto j3 = json::parse(data);
 
+    std::string jsonString = j3.dump();
+    
     //printf("%s", jsonString.c_str());
     
     return [NSString stringWithstring:jsonString];

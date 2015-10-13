@@ -57,6 +57,8 @@
 		8473D87F1BCD9B32006DEEF9 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8473D8721BCD9B32006DEEF9 /* CJSONDeserializer.m */; };
 		8473D8801BCD9B32006DEEF9 /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 8473D8741BCD9B32006DEEF9 /* CJSONScanner.m */; };
 		8473D8811BCD9B32006DEEF9 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8473D8761BCD9B32006DEEF9 /* CJSONSerializer.m */; };
+		8473D8891BCDA8E0006DEEF9 /* CppStringAdditions.h in Sources */ = {isa = PBXBuildFile; fileRef = 8473D8881BCDA8E0006DEEF9 /* CppStringAdditions.h */; };
+		8473D8921BCDAA47006DEEF9 /* JsonModernCPlusPlus.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8473D8911BCDAA47006DEEF9 /* JsonModernCPlusPlus.mm */; };
 		84EC8C5C19E7D45400572998 /* track.chart.get.json in Resources */ = {isa = PBXBuildFile; fileRef = 84EC8C5B19E7D45400572998 /* track.chart.get.json */; };
 		84EC8C6019E7D88600572998 /* location.get.json in Resources */ = {isa = PBXBuildFile; fileRef = 84EC8C5F19E7D88600572998 /* location.get.json */; };
 		84EC8C6A19E8189400572998 /* track.chart.get_nogenre.json in Resources */ = {isa = PBXBuildFile; fileRef = 84EC8C6919E8189400572998 /* track.chart.get_nogenre.json */; };
@@ -158,8 +160,11 @@
 		8473D8751BCD9B32006DEEF9 /* CJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONSerializer.h; sourceTree = "<group>"; };
 		8473D8761BCD9B32006DEEF9 /* CJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONSerializer.m; sourceTree = "<group>"; };
 		8473D8771BCD9B32006DEEF9 /* JSONRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRepresentation.h; sourceTree = "<group>"; };
+		8473D8881BCDA8E0006DEEF9 /* CppStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CppStringAdditions.h; sourceTree = "<group>"; };
+		8473D88F1BCDAA47006DEEF9 /* json.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = json.hpp; sourceTree = "<group>"; };
+		8473D8901BCDAA47006DEEF9 /* JsonModernCPlusPlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonModernCPlusPlus.h; sourceTree = "<group>"; };
+		8473D8911BCDAA47006DEEF9 /* JsonModernCPlusPlus.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = JsonModernCPlusPlus.mm; sourceTree = "<group>"; };
 		84EC8C5B19E7D45400572998 /* track.chart.get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = track.chart.get.json; sourceTree = "<group>"; };
-		84EC8C5D19E7D47300572998 /* macro.subtitles.get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = macro.subtitles.get.json; sourceTree = "<group>"; };
 		84EC8C5F19E7D88600572998 /* location.get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = location.get.json; sourceTree = "<group>"; };
 		84EC8C6919E8189400572998 /* track.chart.get_nogenre.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = track.chart.get_nogenre.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -216,15 +221,11 @@
 			children = (
 				5BA8E517148E560800808B76 /* MBProgressHUD */,
 				5B52847B148E52FC00685137 /* Libs */,
-				5B528461148E52F500685137 /* MCAppDelegate.h */,
-				5B528462148E52F500685137 /* MCAppDelegate.m */,
-				5B528464148E52F500685137 /* MCMasterViewController.h */,
-				5B528465148E52F500685137 /* MCMasterViewController.m */,
-				5B52846A148E52F500685137 /* MCMasterViewController.xib */,
-				5BA8E51E148E62DB00808B76 /* MCTestViewController.h */,
-				5BA8E51F148E62DB00808B76 /* MCTestViewController.m */,
-				5BA8E520148E62DB00808B76 /* MCTestViewController.xib */,
+				8473D88D1BCDA9F0006DEEF9 /* Delegate */,
+				8473D88B1BCDA9D4006DEEF9 /* Controller */,
+				8473D88C1BCDA9E7006DEEF9 /* XIB */,
 				5B528459148E52F500685137 /* Supporting Files */,
+				8473D88A1BCDA984006DEEF9 /* CPlusPlusAdditions */,
 			);
 			path = JSONlibs;
 			sourceTree = "<group>";
@@ -232,14 +233,9 @@
 		5B528459148E52F500685137 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				84EC8C6919E8189400572998 /* track.chart.get_nogenre.json */,
-				84EC8C5F19E7D88600572998 /* location.get.json */,
-				84EC8C5D19E7D47300572998 /* macro.subtitles.get.json */,
-				84EC8C5B19E7D45400572998 /* track.chart.get.json */,
+				8473D8931BCDAAA7006DEEF9 /* Json */,
 				5BA8E38E149167D40063738F /* htdocs */,
-				5BA8E512148E54F100808B76 /* Icon@2x.png */,
-				5BA8E50F148E54EE00808B76 /* Icon.png */,
-				5B832AC1171FCE8600E89317 /* Default-568h@2x.png */,
+				8473D8941BCDAAB1006DEEF9 /* Images */,
 				5B52845A148E52F500685137 /* JSONlibs-Info.plist */,
 				5B52845B148E52F500685137 /* InfoPlist.strings */,
 				5B52845E148E52F500685137 /* main.m */,
@@ -251,6 +247,7 @@
 		5B52847B148E52FC00685137 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				8473D88E1BCDAA47006DEEF9 /* jsonmoderncplusplus */,
 				8473D85F1BCD9B32006DEEF9 /* TouchJSON */,
 				8473D8521BCD92C4006DEEF9 /* json11 */,
 				84079C9E1B346A4B005A2A1A /* Rapidjson */,
@@ -421,6 +418,73 @@
 			path = JSON;
 			sourceTree = "<group>";
 		};
+		8473D88A1BCDA984006DEEF9 /* CPlusPlusAdditions */ = {
+			isa = PBXGroup;
+			children = (
+				8473D8881BCDA8E0006DEEF9 /* CppStringAdditions.h */,
+			);
+			name = CPlusPlusAdditions;
+			sourceTree = "<group>";
+		};
+		8473D88B1BCDA9D4006DEEF9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5B528464148E52F500685137 /* MCMasterViewController.h */,
+				5B528465148E52F500685137 /* MCMasterViewController.m */,
+				5BA8E51E148E62DB00808B76 /* MCTestViewController.h */,
+				5BA8E51F148E62DB00808B76 /* MCTestViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		8473D88C1BCDA9E7006DEEF9 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				5B52846A148E52F500685137 /* MCMasterViewController.xib */,
+				5BA8E520148E62DB00808B76 /* MCTestViewController.xib */,
+			);
+			name = XIB;
+			sourceTree = "<group>";
+		};
+		8473D88D1BCDA9F0006DEEF9 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				5B528461148E52F500685137 /* MCAppDelegate.h */,
+				5B528462148E52F500685137 /* MCAppDelegate.m */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		8473D88E1BCDAA47006DEEF9 /* jsonmoderncplusplus */ = {
+			isa = PBXGroup;
+			children = (
+				8473D88F1BCDAA47006DEEF9 /* json.hpp */,
+				8473D8901BCDAA47006DEEF9 /* JsonModernCPlusPlus.h */,
+				8473D8911BCDAA47006DEEF9 /* JsonModernCPlusPlus.mm */,
+			);
+			path = jsonmoderncplusplus;
+			sourceTree = "<group>";
+		};
+		8473D8931BCDAAA7006DEEF9 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				84EC8C6919E8189400572998 /* track.chart.get_nogenre.json */,
+				84EC8C5F19E7D88600572998 /* location.get.json */,
+				84EC8C5B19E7D45400572998 /* track.chart.get.json */,
+			);
+			name = Json;
+			sourceTree = "<group>";
+		};
+		8473D8941BCDAAB1006DEEF9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5BA8E512148E54F100808B76 /* Icon@2x.png */,
+				5BA8E50F148E54EE00808B76 /* Icon.png */,
+				5B832AC1171FCE8600E89317 /* Default-568h@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -508,6 +572,7 @@
 				5B5284C6148E530D00685137 /* JSONKit.m in Sources */,
 				8473D87F1BCD9B32006DEEF9 /* CJSONDeserializer.m in Sources */,
 				8473D8551BCD92C4006DEEF9 /* json11.cpp in Sources */,
+				8473D8891BCDA8E0006DEEF9 /* CppStringAdditions.h in Sources */,
 				5B5284D2148E530D00685137 /* NSError+Extensions.m in Sources */,
 				845ED4251B3820D900DF07CB /* Capnproto.mm in Sources */,
 				84079CA31B346A83005A2A1A /* GasonObj.mm in Sources */,
@@ -515,6 +580,7 @@
 				8473D85E1BCD93F5006DEEF9 /* Json11.mm in Sources */,
 				8473D87B1BCD9B32006DEEF9 /* CJSONSerialization.m in Sources */,
 				5B5284D3148E530D00685137 /* NXDebug.m in Sources */,
+				8473D8921BCDAA47006DEEF9 /* JsonModernCPlusPlus.mm in Sources */,
 				5B5284D4148E530D00685137 /* NXJsonParser.m in Sources */,
 				5B5284D5148E530D00685137 /* NXJsonSerializer.m in Sources */,
 				5B5284D8148E530D00685137 /* NSObject+SBJson.m in Sources */,

@@ -15,6 +15,7 @@
 #import "GasonObj.h"
 #import "Capnproto.h"
 #import "Json11.h"
+#import "JsonModernCPlusPlus.h"
 
 @implementation MCTestViewController
 
@@ -376,7 +377,7 @@
 {
     NSDate *startTime = [NSDate date];
     
-    GasonObj *rpdj = [[GasonObj alloc] init];
+    GasonObj *rpdj = [GasonObj new];
     id result=[rpdj parse:content];
     float elapsedTime = [startTime timeIntervalSinceNow] * -1000;
     if (result == nil)
@@ -388,7 +389,7 @@
 {
     NSDate *startTime = [NSDate date];
     
-    Rapidjson *rpdj = [[Rapidjson alloc] init];
+    Rapidjson *rpdj = [Rapidjson new];
     id result=[rpdj parse:content];
     float elapsedTime = [startTime timeIntervalSinceNow] * -1000;
     if (result == nil)
@@ -400,7 +401,18 @@
 {
     NSDate *startTime = [NSDate date];
     
-    Json11 *rpdj = [[Json11 alloc] init];
+    Json11 *rpdj = [Json11 new];
+    id result=[rpdj parse:content];
+    float elapsedTime = [startTime timeIntervalSinceNow] * -1000;
+    if (result == nil)
+    elapsedTime = -1.0;
+    return [NSNumber numberWithFloat:elapsedTime];
+}
+
+- (NSNumber *)parseWithJsonModernCPlusPlus:(NSString *)content {
+    NSDate *startTime = [NSDate date];
+    
+    JsonModernCPlusPlus *rpdj = [JsonModernCPlusPlus new];
     id result=[rpdj parse:content];
     float elapsedTime = [startTime timeIntervalSinceNow] * -1000;
     if (result == nil)
