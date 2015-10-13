@@ -28,6 +28,8 @@ Supported JSON parsers
   https://github.com/miloyip/rapidjson by @miloyip
 - Gason /C++
   https://github.com/vivkin/gason by @vivkin
+- Json11 / c++
+- https://github.com/dropbox/json11 by @dropbox
 
 Other parsers
 - Cap'N Proto
