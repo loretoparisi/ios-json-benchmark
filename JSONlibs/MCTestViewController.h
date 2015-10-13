@@ -27,6 +27,7 @@
 - (void)buildChart;
 
 - (void)parse;
+- (NSNumber *)parseWithJson11:(NSString *)content;
 - (NSNumber *)parseWithRapidJson:(NSString *)content;
 - (NSNumber *)parseWithJSONKit:(NSString *)content;
 - (NSNumber *)parseWithSBJson:(NSString *)content;

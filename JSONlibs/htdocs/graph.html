@@ -21,7 +21,9 @@
 				chart = new Highcharts.Chart({
 					chart: {
 						renderTo: 'container',
-						defaultSeriesType: 'bar'
+						defaultSeriesType: 'bar',
+                        backgroundColor: 'white',
+                        borderWidth : 0
 					},
 					title: {
 						text: 'iOS JSON Libraries - Performance Test'
@@ -56,15 +58,15 @@
 						}
 					},
 					legend: {
-						layout: 'vertical',
-						align: 'right',
-						verticalAlign: 'top',
-						x: -15,
-						y: 50,
-						floating: true,
-						borderWidth: 1,
-						backgroundColor: '#FFFFFF',
-						shadow: true
+                                             layout: 'horizontal',
+                                             align: 'center',
+                                             verticalAlign: 'bottom',
+                                             x: 0,
+                                             y: 0,
+                                             floating: false,
+                                             borderWidth: 0,
+                                             backgroundColor: '#FFFFFF',
+                                             shadow: false
 					},
 					credits: {
 						enabled: false

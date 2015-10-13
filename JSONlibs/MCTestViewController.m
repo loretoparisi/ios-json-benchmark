@@ -14,6 +14,7 @@
 #import "Rapidjson.h"
 #import "GasonObj.h"
 #import "Capnproto.h"
+#import "Json11.h"
 
 @implementation MCTestViewController
 
@@ -172,7 +173,7 @@
 {
     switch (section) {
         case 0:
-            return [NSString stringWithFormat:@"Average (%i repeats)", self.repeats];
+            return [NSString stringWithFormat:@"Average (%li repeats)", (long)self.repeats];
             break;
         case 1:
             return @"Min";
@@ -295,7 +296,7 @@
     //categories: ['Africa', 'America', 'Asia', 'Europe', 'Oceania']
     NSMutableString *categories = [NSMutableString stringWithString:@"["];
     for (NSString *libname in self.selectedLibraries) {
-        [categories appendFormat:@"'%@'", ([libname isEqualToString:@"NSJSONSerialization"]?@"Apple JSON":libname)];
+        [categories appendFormat:@"'%@'", libname];
         if (libname != [self.selectedLibraries lastObject])
             [categories appendString:@", "];
     }
@@ -388,6 +389,18 @@
     NSDate *startTime = [NSDate date];
     
     Rapidjson *rpdj = [[Rapidjson alloc] init];
+    id result=[rpdj parse:content];
+    float elapsedTime = [startTime timeIntervalSinceNow] * -1000;
+    if (result == nil)
+    elapsedTime = -1.0;
+    return [NSNumber numberWithFloat:elapsedTime];
+}
+
+- (NSNumber *)parseWithJson11:(NSString *)content
+{
+    NSDate *startTime = [NSDate date];
+    
+    Json11 *rpdj = [[Json11 alloc] init];
     id result=[rpdj parse:content];
     float elapsedTime = [startTime timeIntervalSinceNow] * -1000;
     if (result == nil)
