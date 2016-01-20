@@ -30,6 +30,8 @@ Supported JSON parsers
   https://github.com/vivkin/gason by @vivkin
 - Json11 / C++
   https://github.com/dropbox/json11 by @dropbox
+- ObjectMapper / Swift
+  https://github.com/Hearst-DD/ObjectMapper by @Hearst-DD
 
 Other parsers
 - Cap'N Proto
