@@ -42,6 +42,35 @@
 		84079C961B344C47005A2A1A /* Rapidjson.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84079C951B344C47005A2A1A /* Rapidjson.mm */; };
 		84079C9D1B346A2D005A2A1A /* gason.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84079C9B1B346A2D005A2A1A /* gason.cpp */; };
 		84079CA31B346A83005A2A1A /* GasonObj.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84079CA21B346A83005A2A1A /* GasonObj.mm */; };
+		840ACEE01C4FA52D00621226 /* FromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840ACECD1C4FA52D00621226 /* FromJSON.swift */; };
+		840ACEE11C4FA52D00621226 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840ACECE1C4FA52D00621226 /* Map.swift */; };
+		840ACEE21C4FA52D00621226 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840ACECF1C4FA52D00621226 /* Mappable.swift */; };
+		840ACEE31C4FA52D00621226 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840ACED01C4FA52D00621226 /* Mapper.swift */; };
+		840ACEE41C4FA52D00621226 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840ACED11C4FA52D00621226 /* Operators.swift */; };
+		840ACEE51C4FA52D00621226 /* ToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840ACED21C4FA52D00621226 /* ToJSON.swift */; };
+		840ACEE71C4FA52D00621226 /* CustomDateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840ACED71C4FA52D00621226 /* CustomDateFormatTransform.swift */; };
+		840ACEE81C4FA52D00621226 /* DateFormatterTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840ACED81C4FA52D00621226 /* DateFormatterTransform.swift */; };
+		840ACEE91C4FA52D00621226 /* DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840ACED91C4FA52D00621226 /* DateTransform.swift */; };
+		840ACEEA1C4FA52D00621226 /* ISO8601DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840ACEDA1C4FA52D00621226 /* ISO8601DateTransform.swift */; };
+		840ACEEB1C4FA52D00621226 /* URLTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840ACEDB1C4FA52D00621226 /* URLTransform.swift */; };
+		840ACEEC1C4FA52D00621226 /* EnumTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840ACEDD1C4FA52D00621226 /* EnumTransform.swift */; };
+		840ACEED1C4FA52D00621226 /* TransformOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840ACEDE1C4FA52D00621226 /* TransformOf.swift */; };
+		840ACEEE1C4FA52D00621226 /* TransformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840ACEDF1C4FA52D00621226 /* TransformType.swift */; };
+		840ACEF21C4FA57100621226 /* ObjectMapperWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840ACEF11C4FA57100621226 /* ObjectMapperWrapper.swift */; };
+		840ACEF51C4FA58900621226 /* ObjectMapperJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 840ACEF41C4FA58900621226 /* ObjectMapperJSON.m */; };
+		840ACEF81C4FAB0800621226 /* BasicTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840ACEF71C4FAB0800621226 /* BasicTypes.swift */; };
+		84256D661C4EB10B004C3102 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84256D561C4EB10B004C3102 /* Builder.swift */; };
+		84256D671C4EB10B004C3102 /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84256D571C4EB10B004C3102 /* Decodable.swift */; };
+		84256D681C4EB10B004C3102 /* decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84256D581C4EB10B004C3102 /* decode.swift */; };
+		84256D691C4EB10B004C3102 /* DecodeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84256D591C4EB10B004C3102 /* DecodeError.swift */; };
+		84256D6A1C4EB10B004C3102 /* Extractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84256D5A1C4EB10B004C3102 /* Extractor.swift */; };
+		84256D6B1C4EB10B004C3102 /* HimotokiJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 84256D5E1C4EB10B004C3102 /* HimotokiJSON.m */; };
+		84256D6E1C4EB10B004C3102 /* KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84256D611C4EB10B004C3102 /* KeyPath.swift */; };
+		84256D6F1C4EB10B004C3102 /* NSNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84256D621C4EB10B004C3102 /* NSNumber.swift */; };
+		84256D701C4EB10B004C3102 /* HOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84256D631C4EB10B004C3102 /* HOperators.swift */; };
+		84256D711C4EB10B004C3102 /* RawRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84256D641C4EB10B004C3102 /* RawRepresentable.swift */; };
+		84256D721C4EB10B004C3102 /* StandardLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84256D651C4EB10B004C3102 /* StandardLib.swift */; };
+		84256D741C4EB249004C3102 /* HimotokiWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84256D731C4EB249004C3102 /* HimotokiWrapper.swift */; };
 		845ED4251B3820D900DF07CB /* Capnproto.mm in Sources */ = {isa = PBXBuildFile; fileRef = 845ED4241B3820D900DF07CB /* Capnproto.mm */; };
 		8473D8551BCD92C4006DEEF9 /* json11.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8473D8531BCD92C4006DEEF9 /* json11.cpp */; };
 		8473D8571BCD92FE006DEEF9 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8473D8561BCD92FE006DEEF9 /* libc++.tbd */; };
@@ -131,6 +160,38 @@
 		84079C9C1B346A2D005A2A1A /* gason.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gason.h; sourceTree = "<group>"; };
 		84079CA11B346A83005A2A1A /* GasonObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GasonObj.h; sourceTree = "<group>"; };
 		84079CA21B346A83005A2A1A /* GasonObj.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GasonObj.mm; sourceTree = "<group>"; };
+		840ACECD1C4FA52D00621226 /* FromJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FromJSON.swift; sourceTree = "<group>"; };
+		840ACECE1C4FA52D00621226 /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		840ACECF1C4FA52D00621226 /* Mappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mappable.swift; sourceTree = "<group>"; };
+		840ACED01C4FA52D00621226 /* Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
+		840ACED11C4FA52D00621226 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		840ACED21C4FA52D00621226 /* ToJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToJSON.swift; sourceTree = "<group>"; };
+		840ACED71C4FA52D00621226 /* CustomDateFormatTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDateFormatTransform.swift; sourceTree = "<group>"; };
+		840ACED81C4FA52D00621226 /* DateFormatterTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatterTransform.swift; sourceTree = "<group>"; };
+		840ACED91C4FA52D00621226 /* DateTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTransform.swift; sourceTree = "<group>"; };
+		840ACEDA1C4FA52D00621226 /* ISO8601DateTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISO8601DateTransform.swift; sourceTree = "<group>"; };
+		840ACEDB1C4FA52D00621226 /* URLTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLTransform.swift; sourceTree = "<group>"; };
+		840ACEDD1C4FA52D00621226 /* EnumTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumTransform.swift; sourceTree = "<group>"; };
+		840ACEDE1C4FA52D00621226 /* TransformOf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformOf.swift; sourceTree = "<group>"; };
+		840ACEDF1C4FA52D00621226 /* TransformType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformType.swift; sourceTree = "<group>"; };
+		840ACEF11C4FA57100621226 /* ObjectMapperWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectMapperWrapper.swift; sourceTree = "<group>"; };
+		840ACEF31C4FA58900621226 /* ObjectMapperJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectMapperJSON.h; sourceTree = "<group>"; };
+		840ACEF41C4FA58900621226 /* ObjectMapperJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectMapperJSON.m; sourceTree = "<group>"; };
+		840ACEF71C4FAB0800621226 /* BasicTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicTypes.swift; sourceTree = "<group>"; };
+		84256D551C4EB10B004C3102 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "Himotoki/Bridging-Header.h"; sourceTree = "<group>"; };
+		84256D561C4EB10B004C3102 /* Builder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		84256D571C4EB10B004C3102 /* Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decodable.swift; sourceTree = "<group>"; };
+		84256D581C4EB10B004C3102 /* decode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = decode.swift; sourceTree = "<group>"; };
+		84256D591C4EB10B004C3102 /* DecodeError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodeError.swift; sourceTree = "<group>"; };
+		84256D5A1C4EB10B004C3102 /* Extractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extractor.swift; sourceTree = "<group>"; };
+		84256D5D1C4EB10B004C3102 /* HimotokiJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HimotokiJSON.h; sourceTree = "<group>"; };
+		84256D5E1C4EB10B004C3102 /* HimotokiJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HimotokiJSON.m; sourceTree = "<group>"; };
+		84256D611C4EB10B004C3102 /* KeyPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyPath.swift; sourceTree = "<group>"; };
+		84256D621C4EB10B004C3102 /* NSNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSNumber.swift; sourceTree = "<group>"; };
+		84256D631C4EB10B004C3102 /* HOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HOperators.swift; sourceTree = "<group>"; };
+		84256D641C4EB10B004C3102 /* RawRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawRepresentable.swift; sourceTree = "<group>"; };
+		84256D651C4EB10B004C3102 /* StandardLib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardLib.swift; sourceTree = "<group>"; };
+		84256D731C4EB249004C3102 /* HimotokiWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HimotokiWrapper.swift; sourceTree = "<group>"; };
 		845ED4231B3820D900DF07CB /* Capnproto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Capnproto.h; sourceTree = "<group>"; };
 		845ED4241B3820D900DF07CB /* Capnproto.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Capnproto.mm; sourceTree = "<group>"; };
 		8473D8531BCD92C4006DEEF9 /* json11.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = json11.cpp; sourceTree = "<group>"; };
@@ -219,6 +280,7 @@
 		5B528458148E52F500685137 /* JSONlibs */ = {
 			isa = PBXGroup;
 			children = (
+				84256D551C4EB10B004C3102 /* Bridging-Header.h */,
 				5BA8E517148E560800808B76 /* MBProgressHUD */,
 				5B52847B148E52FC00685137 /* Libs */,
 				8473D88D1BCDA9F0006DEEF9 /* Delegate */,
@@ -247,6 +309,8 @@
 		5B52847B148E52FC00685137 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				840ACECB1C4FA52D00621226 /* ObjectMapper */,
+				84256D541C4EB10B004C3102 /* Himotoki */,
 				8473D88E1BCDAA47006DEEF9 /* jsonmoderncplusplus */,
 				8473D85F1BCD9B32006DEEF9 /* TouchJSON */,
 				8473D8521BCD92C4006DEEF9 /* json11 */,
@@ -344,6 +408,107 @@
 				84079C951B344C47005A2A1A /* Rapidjson.mm */,
 			);
 			name = Rapidjson;
+			sourceTree = "<group>";
+		};
+		840ACECB1C4FA52D00621226 /* ObjectMapper */ = {
+			isa = PBXGroup;
+			children = (
+				840ACECC1C4FA52D00621226 /* Core */,
+				840ACED51C4FA52D00621226 /* Transforms */,
+				840ACEF61C4FA58E00621226 /* ObjC-Bridging */,
+			);
+			path = ObjectMapper;
+			sourceTree = "<group>";
+		};
+		840ACECC1C4FA52D00621226 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				840ACEF71C4FAB0800621226 /* BasicTypes.swift */,
+				840ACECD1C4FA52D00621226 /* FromJSON.swift */,
+				840ACECE1C4FA52D00621226 /* Map.swift */,
+				840ACECF1C4FA52D00621226 /* Mappable.swift */,
+				840ACED01C4FA52D00621226 /* Mapper.swift */,
+				840ACED11C4FA52D00621226 /* Operators.swift */,
+				840ACED21C4FA52D00621226 /* ToJSON.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		840ACED51C4FA52D00621226 /* Transforms */ = {
+			isa = PBXGroup;
+			children = (
+				840ACED61C4FA52D00621226 /* Cocoa */,
+				840ACEDC1C4FA52D00621226 /* Swift */,
+			);
+			path = Transforms;
+			sourceTree = "<group>";
+		};
+		840ACED61C4FA52D00621226 /* Cocoa */ = {
+			isa = PBXGroup;
+			children = (
+				840ACED71C4FA52D00621226 /* CustomDateFormatTransform.swift */,
+				840ACED81C4FA52D00621226 /* DateFormatterTransform.swift */,
+				840ACED91C4FA52D00621226 /* DateTransform.swift */,
+				840ACEDA1C4FA52D00621226 /* ISO8601DateTransform.swift */,
+				840ACEDB1C4FA52D00621226 /* URLTransform.swift */,
+			);
+			path = Cocoa;
+			sourceTree = "<group>";
+		};
+		840ACEDC1C4FA52D00621226 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				840ACEDD1C4FA52D00621226 /* EnumTransform.swift */,
+				840ACEDE1C4FA52D00621226 /* TransformOf.swift */,
+				840ACEDF1C4FA52D00621226 /* TransformType.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		840ACEEF1C4FA53F00621226 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				84256D561C4EB10B004C3102 /* Builder.swift */,
+				84256D571C4EB10B004C3102 /* Decodable.swift */,
+				84256D581C4EB10B004C3102 /* decode.swift */,
+				84256D591C4EB10B004C3102 /* DecodeError.swift */,
+				84256D5A1C4EB10B004C3102 /* Extractor.swift */,
+				84256D611C4EB10B004C3102 /* KeyPath.swift */,
+				84256D621C4EB10B004C3102 /* NSNumber.swift */,
+				84256D631C4EB10B004C3102 /* HOperators.swift */,
+				84256D641C4EB10B004C3102 /* RawRepresentable.swift */,
+				84256D651C4EB10B004C3102 /* StandardLib.swift */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		840ACEF61C4FA58E00621226 /* ObjC-Bridging */ = {
+			isa = PBXGroup;
+			children = (
+				840ACEF11C4FA57100621226 /* ObjectMapperWrapper.swift */,
+				840ACEF31C4FA58900621226 /* ObjectMapperJSON.h */,
+				840ACEF41C4FA58900621226 /* ObjectMapperJSON.m */,
+			);
+			name = "ObjC-Bridging";
+			sourceTree = "<group>";
+		};
+		84256D541C4EB10B004C3102 /* Himotoki */ = {
+			isa = PBXGroup;
+			children = (
+				84256D751C4F86B9004C3102 /* ObjC-Bridging */,
+				840ACEEF1C4FA53F00621226 /* Sources */,
+			);
+			path = Himotoki;
+			sourceTree = "<group>";
+		};
+		84256D751C4F86B9004C3102 /* ObjC-Bridging */ = {
+			isa = PBXGroup;
+			children = (
+				84256D5D1C4EB10B004C3102 /* HimotokiJSON.h */,
+				84256D5E1C4EB10B004C3102 /* HimotokiJSON.m */,
+				84256D731C4EB249004C3102 /* HimotokiWrapper.swift */,
+			);
+			name = "ObjC-Bridging";
 			sourceTree = "<group>";
 		};
 		845ED4261B3820E300DF07CB /* Capnproto */ = {
@@ -514,6 +679,7 @@
 				KnownAssetTags = (
 					New,
 				);
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Mocha Code";
 				TargetAttributes = {
@@ -564,46 +730,75 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				840ACEE51C4FA52D00621226 /* ToJSON.swift in Sources */,
+				840ACEEA1C4FA52D00621226 /* ISO8601DateTransform.swift in Sources */,
+				840ACEED1C4FA52D00621226 /* TransformOf.swift in Sources */,
+				840ACEEB1C4FA52D00621226 /* URLTransform.swift in Sources */,
 				84079C961B344C47005A2A1A /* Rapidjson.mm in Sources */,
 				5B52845F148E52F500685137 /* main.m in Sources */,
 				8473D87D1BCD9B32006DEEF9 /* CDataScanner_Extensions.m in Sources */,
+				84256D671C4EB10B004C3102 /* Decodable.swift in Sources */,
 				5B528463148E52F500685137 /* MCAppDelegate.m in Sources */,
 				5B528466148E52F500685137 /* MCMasterViewController.m in Sources */,
 				5B5284C6148E530D00685137 /* JSONKit.m in Sources */,
+				84256D711C4EB10B004C3102 /* RawRepresentable.swift in Sources */,
 				8473D87F1BCD9B32006DEEF9 /* CJSONDeserializer.m in Sources */,
 				8473D8551BCD92C4006DEEF9 /* json11.cpp in Sources */,
 				8473D8891BCDA8E0006DEEF9 /* CppStringAdditions.h in Sources */,
+				84256D691C4EB10B004C3102 /* DecodeError.swift in Sources */,
+				840ACEE91C4FA52D00621226 /* DateTransform.swift in Sources */,
+				840ACEF21C4FA57100621226 /* ObjectMapperWrapper.swift in Sources */,
 				5B5284D2148E530D00685137 /* NSError+Extensions.m in Sources */,
 				845ED4251B3820D900DF07CB /* Capnproto.mm in Sources */,
+				840ACEE01C4FA52D00621226 /* FromJSON.swift in Sources */,
 				84079CA31B346A83005A2A1A /* GasonObj.mm in Sources */,
+				840ACEE11C4FA52D00621226 /* Map.swift in Sources */,
 				8473D8801BCD9B32006DEEF9 /* CJSONScanner.m in Sources */,
 				8473D85E1BCD93F5006DEEF9 /* Json11.mm in Sources */,
 				8473D87B1BCD9B32006DEEF9 /* CJSONSerialization.m in Sources */,
 				5B5284D3148E530D00685137 /* NXDebug.m in Sources */,
 				8473D8921BCDAA47006DEEF9 /* JsonModernCPlusPlus.mm in Sources */,
+				84256D6F1C4EB10B004C3102 /* NSNumber.swift in Sources */,
 				5B5284D4148E530D00685137 /* NXJsonParser.m in Sources */,
 				5B5284D5148E530D00685137 /* NXJsonSerializer.m in Sources */,
+				840ACEF51C4FA58900621226 /* ObjectMapperJSON.m in Sources */,
 				5B5284D8148E530D00685137 /* NSObject+SBJson.m in Sources */,
 				84079C9D1B346A2D005A2A1A /* gason.cpp in Sources */,
 				5B5284D9148E530D00685137 /* SBJsonParser.m in Sources */,
+				840ACEE81C4FA52D00621226 /* DateFormatterTransform.swift in Sources */,
+				840ACEE71C4FA52D00621226 /* CustomDateFormatTransform.swift in Sources */,
 				8473D8791BCD9B32006DEEF9 /* CFilteringJSONSerializer.m in Sources */,
 				5B5284DA148E530D00685137 /* SBJsonStreamParser.m in Sources */,
 				8473D87E1BCD9B32006DEEF9 /* NSDictionary_JSONExtensions.m in Sources */,
+				84256D6A1C4EB10B004C3102 /* Extractor.swift in Sources */,
 				8473D8781BCD9B32006DEEF9 /* CDataScanner.m in Sources */,
+				84256D6E1C4EB10B004C3102 /* KeyPath.swift in Sources */,
 				5B5284DB148E530D00685137 /* SBJsonStreamParserAccumulator.m in Sources */,
 				5B5284DC148E530D00685137 /* SBJsonStreamParserAdapter.m in Sources */,
+				84256D681C4EB10B004C3102 /* decode.swift in Sources */,
 				5B5284DD148E530D00685137 /* SBJsonStreamParserState.m in Sources */,
 				5B5284DE148E530D00685137 /* SBJsonStreamWriter.m in Sources */,
 				8473D87A1BCD9B32006DEEF9 /* CJSONDeserializer_BlocksExtensions.m in Sources */,
+				84256D701C4EB10B004C3102 /* HOperators.swift in Sources */,
+				840ACEF81C4FAB0800621226 /* BasicTypes.swift in Sources */,
+				840ACEE21C4FA52D00621226 /* Mappable.swift in Sources */,
 				5B5284DF148E530D00685137 /* SBJsonStreamWriterAccumulator.m in Sources */,
 				5B5284E0148E530D00685137 /* SBJsonStreamWriterState.m in Sources */,
+				840ACEE41C4FA52D00621226 /* Operators.swift in Sources */,
+				840ACEE31C4FA52D00621226 /* Mapper.swift in Sources */,
 				5B5284E1148E530D00685137 /* SBJsonTokeniser.m in Sources */,
 				5B5284E2148E530D00685137 /* SBJsonUTF8Stream.m in Sources */,
+				84256D741C4EB249004C3102 /* HimotokiWrapper.swift in Sources */,
 				8473D87C1BCD9B32006DEEF9 /* CJSONSerializedData.m in Sources */,
+				84256D721C4EB10B004C3102 /* StandardLib.swift in Sources */,
+				840ACEEE1C4FA52D00621226 /* TransformType.swift in Sources */,
 				5B5284E3148E530D00685137 /* SBJsonWriter.m in Sources */,
 				8473D8811BCD9B32006DEEF9 /* CJSONSerializer.m in Sources */,
+				84256D661C4EB10B004C3102 /* Builder.swift in Sources */,
+				84256D6B1C4EB10B004C3102 /* HimotokiJSON.m in Sources */,
 				5BA8E516148E55F800808B76 /* MBProgressHUD.m in Sources */,
 				5BA8E521148E62DB00808B76 /* MCTestViewController.m in Sources */,
+				840ACEEC1C4FA52D00621226 /* EnumTransform.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -706,12 +901,17 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Loreto Parisi (HFX54548Y7)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JSONlibs/JSONlibs-Prefix.pch";
 				INFOPLIST_FILE = "JSONlibs/JSONlibs-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JSONlibs/Himotoki/Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -722,12 +922,17 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Loreto Parisi (HFX54548Y7)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JSONlibs/JSONlibs-Prefix.pch";
 				INFOPLIST_FILE = "JSONlibs/JSONlibs-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JSONlibs/Himotoki/Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

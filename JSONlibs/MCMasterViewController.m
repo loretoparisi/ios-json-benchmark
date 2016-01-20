@@ -49,7 +49,7 @@
 	
     // Do any additional setup after loading the view, typically from a nib.
     _libraries = [[NSArray alloc] initWithObjects:@"JSONKit", @"JSONKitData", @"JSONKitThread", @"JSONKitThreadData", @"TouchJSON", @"NextiveJson", @"SBJson", @"SBJsonData", @"NSJSONSerialization",
-                  @"RapidJson",@"Gason", @"Json11", @"JsonModernCPlusPlus", nil];
+                  @"RapidJson",@"Gason", @"Json11", @"JsonModernCPlusPlus", @"Himotoki", @"ObjectMapper", nil];
     
     _files = [[NSArray alloc] initWithObjects:
               @"track.chart.get.json",

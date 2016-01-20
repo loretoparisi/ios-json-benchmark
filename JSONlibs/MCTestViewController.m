@@ -16,6 +16,8 @@
 #import "Capnproto.h"
 #import "Json11.h"
 #import "JsonModernCPlusPlus.h"
+#import "HimotokiJSON.h"
+#import "ObjectMapperJSON.h"
 
 @implementation MCTestViewController
 
@@ -371,6 +373,30 @@
     [self.tableView reloadData];    
     [self buildChart];
     [self setCompleted:YES];
+}
+
+- (NSNumber *)parseWithObjectMapper:(NSString *)content
+{
+    NSDate *startTime = [NSDate date];
+    
+    ObjectMapperJSON *hmk = [ObjectMapperJSON new];
+    id result=[hmk parse:content];
+    float elapsedTime = [startTime timeIntervalSinceNow] * -1000;
+    if (result == nil)
+        elapsedTime = -1.0;
+    return [NSNumber numberWithFloat:elapsedTime];
+}
+
+- (NSNumber *)parseWithHimotoki:(NSString *)content
+{
+    NSDate *startTime = [NSDate date];
+    
+    HimotokiJSON *hmk = [HimotokiJSON new];
+    id result=[hmk parse:content];
+    float elapsedTime = [startTime timeIntervalSinceNow] * -1000;
+    if (result == nil)
+        elapsedTime = -1.0;
+    return [NSNumber numberWithFloat:elapsedTime];
 }
 
 - (NSNumber *)parseWithGason:(NSString *)content
